@@ -22,7 +22,7 @@ Here is the multi-language translation project for X-Reader.
 ### A language definition is a swift class. These class name conform to Lang_[language code]_[region code].
 ####  Below is the English localization:
 ```
-class Lang_en_us: LangProtocol {
+class Lang_en_US: LangProtocol {
     var Alert_Title: String = "Warning"
     var Notice_Title: String = "Info"
     var Start_Title: String = "Start"
@@ -36,7 +36,7 @@ class Lang_en_us: LangProtocol {
 ```
 #### And its corresponding Chinese localization class:
 ```
-class Lang_zh_cn: LangProtocol {
+class Lang_zh_CN: LangProtocol {
     var Alert_Title: String = "警告"
     var Notice_Title: String = "提示"
     var Start_Title: String = "开始"
