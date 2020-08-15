@@ -1,5 +1,5 @@
 //
-//  Lang_zh_hk.swift
+//  Lang_zh_HK.swift
 //  X-Reader
 //
 //  Created by mac on 2018/12/17.
@@ -8,8 +8,7 @@
 
 import UIKit
 
-//zh-hk:
-class Lang_zh_hk: LangProtocol {
+class Lang_zh_HK: LangProtocol {
     var FontStyle_Title:String = "字體效果"
     var Alert_Title: String = "警告"
     var Notice_Title: String = "提示"
@@ -190,6 +189,8 @@ class Lang_zh_hk: LangProtocol {
     var Extract_To_Current_Dir__Msg:String = "解壓到當前資料夾"
     
     var File_Drag_Must_Sort_Manually___Msg: String = "需要切換到手動排序模式，才能人為排序"
+    var Wifi_Transfer_Info__Msg: String = "請確保電腦和手機在同一個區域網下\n 請開啟電腦瀏覽器輸入以下位址:"
+    var Wifi_Transfer_Warn__Msg: String = "注意: 傳輸過程中請勿離開此頁面或鎖屏!"
     
     //MARK: Msg-Reading
     var Catalog_Seq_Nil__Msg: String = "目錄目標為空"
@@ -231,7 +232,7 @@ class Lang_zh_hk: LangProtocol {
     var Reader_Turning_Effect_UpDown: String = "上下"
     var Reader_Turning_Effect_TwoUp: String = "雙頁"
     
-    //MARK: JWRefreshControl
+    //MARK: Refresh Control
     var PullRefresh_Release_To_Refresh: String = ""
     var PullRefresh_Pull_To_Load: String = "下拉載入上一章"
     var PullRefresh_Loading: String = "載入中..."

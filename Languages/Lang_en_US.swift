@@ -1,5 +1,5 @@
 //
-//  Lang_en_us.swift
+//  Lang_en_US.swift
 //  X-Reader
 //
 //  Created by mac on 2018/12/17.
@@ -8,8 +8,7 @@
 
 import UIKit
 
-//en-us
-class Lang_en_us: LangProtocol {
+class Lang_en_US: LangProtocol {
     var FontStyle_Title: String = "Font Style"
     var Alert_Title: String = "Warning"
     var Notice_Title: String = "Info"
@@ -189,6 +188,8 @@ class Lang_en_us: LangProtocol {
     var Extract_To_Current_Dir__Msg: String = "Extract to current folder"
     
     var File_Drag_Must_Sort_Manually___Msg: String = "Can't reorder unless switch to sort manually mode"
+    var Wifi_Transfer_Info__Msg: String = "Make sure the computer and device in the same LAN\n    Please open browser and input the URL:"
+    var Wifi_Transfer_Warn__Msg: String = "Warning: Do not leave or lock screen when transfering!"
     
     //MARK: Msg-Reader
     var Catalog_Seq_Nil__Msg: String = "Catalog target is null"
@@ -233,7 +234,7 @@ class Lang_en_us: LangProtocol {
     var Reader_Turning_Effect_UpDown: String = "Vertical"
     var Reader_Turning_Effect_TwoUp: String = "Two Pages"
     
-    //MARK: JWRefreshControl
+    //MARK: Refresh Control
     var PullRefresh_Release_To_Refresh: String = ""
     var PullRefresh_Pull_To_Load: String = "Pull to load previous chapter"
     var PullRefresh_Loading: String = "Loading..."

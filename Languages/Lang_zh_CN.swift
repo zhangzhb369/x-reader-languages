@@ -1,5 +1,5 @@
 //
-//  Lang_zh_cn.swift
+//  Lang_zh_CN.swift
 //  X-Reader
 //
 //  Created by mac on 2018/12/17.
@@ -8,8 +8,7 @@
 
 import UIKit
 
-//zh-cn:
-class Lang_zh_cn: LangProtocol {
+class Lang_zh_CN: LangProtocol {
     //MARK: - Basic
     var FontStyle_Title: String = "字体效果"
     var Alert_Title: String = "警告"
@@ -191,6 +190,8 @@ class Lang_zh_cn: LangProtocol {
     var Extract_To_Current_Dir__Msg: String = "解压到当前文件夹"
     
     var File_Drag_Must_Sort_Manually___Msg: String = "需要切换到手动排序模式，才能人为排序"
+    var Wifi_Transfer_Info__Msg: String = "请确保电脑和手机在同一个局域网下\n 请打开电脑浏览器输入以下地址:"
+    var Wifi_Transfer_Warn__Msg: String = "注意：传输过程中请勿离开此页面或锁屏！"
     
     //MARK: Msg-Reading
     var Prev_Chapter__Title: String = "上一章"
@@ -232,7 +233,7 @@ class Lang_zh_cn: LangProtocol {
     var Reader_Turning_Effect_UpDown: String = "上下"
     var Reader_Turning_Effect_TwoUp: String = "双页"
     
-    //MARK: JWRefreshControl
+    //MARK: Refresh Control
     var PullRefresh_Release_To_Refresh: String = ""
     var PullRefresh_Pull_To_Load: String = "下拉加载上一章"
     var PullRefresh_Loading: String = "加载中..."

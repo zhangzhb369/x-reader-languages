@@ -19,7 +19,7 @@ Here is the multi-language translation project for X-Reader.
    
 
 ## :green_book: Multi-languange localization:
-### A language definition is a swift class. These class name conform to Lang_[Language code].
+### A language definition is a swift class. These class name conform to Lang_[language code]_[region code].
 ####  Below is the English localization:
 ```
 class Lang_en_us: LangProtocol {
