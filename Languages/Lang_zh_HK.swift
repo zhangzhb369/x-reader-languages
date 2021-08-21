@@ -33,6 +33,11 @@ class Lang_zh_HK: LangProtocol {
     var User__Title: String = "使用者"
     var Feedback__Title: String = "回饋"
     var RecommendFeedback__Title: String = "問題建議"
+    var Rectify__Title: String = "糾正"
+    var Website__Title: String = "網站"
+    var Booksite__Title: String = "圖書網站"
+    var Booksite_Create__Title: String = "創建網站"
+    var Booksite_Edit__Title: String = "編輯網站"
     var Clean_Space__Title: String = "釋放空間"
     var Clear_Cache__Title: String = "清理緩存"
     var Clear_All__Title: String = "清除全部"
@@ -42,6 +47,7 @@ class Lang_zh_HK: LangProtocol {
     var Share_App__Title: String = "分享App"
     var Search_Local__Title: String = "搜尋本地"
     var Search_Internet__Title: String = "搜尋網路"
+    var Translation_Issue__Title: String = "翻譯問題"
     
     //MARK: - Menu
     var Bookmark__Title: String = "書簽"
@@ -54,11 +60,10 @@ class Lang_zh_HK: LangProtocol {
     var Advanced_Search__Title: String = "進階搜尋"
     var Move_To_Here__Title: String = "移動到此"
     var Import_File__Title: String = "導入檔案"
-    var Import_By_Wifi__Title: String = "Wifi導入檔案"
-    var Import_By_iCloud__Title: String = "iCloud導入檔案"
     var Font_Management__Title: String = "字體管理"
     var ToggleList__Title: String = "切換清單"
     var ToggleShowExtension__Title: String = "切換副檔名"
+    var ToggleFolderAhead__Title: String = "切換目錄在前"
     var ZoomIn__Title: String = "放大"
     var ZoomOut__Title: String = "縮小"
     var ZoomNormal__Title: String = "正常大小"
@@ -66,6 +71,7 @@ class Lang_zh_HK: LangProtocol {
     var Input_Keyword_To_Filter__Msg: String = "輸入關鍵字過濾"
     var Input_Keyword_To_Search__Msg: String = "輸入關鍵字搜尋"
     var Input_File_Extension_To_Search__Msg: String = "以空白分割，如：epub pdf"
+    var Input_Booksite_Url_Prompt__Msg: String = "請輸入網址，以http:// 或https:// 開始"
     
     //MARK: Finder-Tool
     var Select_All__Title: String = "全選"
@@ -84,10 +90,10 @@ class Lang_zh_HK: LangProtocol {
     var File_Transfer__Title: String = "檔案傳送"
     var File_Import__Title: String = "檔案導入"
     var Import_Address__Title: String = "位置"
-    var Import_By_ICloud: String = "iCloud導入"
-    var Import_By_WifiServer: String = "Wifi伺服器導入"
-    var Import_By_Camera: String = "拍攝導入"
-    var Import_By_PhotoAlbum: String = "相冊導入"
+    var Import_From_ICloud: String = "從iCloud導入"
+    var Import_From_File: String = "從檔案導入"
+    var Import_From_WifiServer: String = "從Wifi伺服器導入"
+    var Import_From_PhotoAlbum: String = "從相冊導入"
     
     //MARK: - Sort
     var Sort_Title:String = "排序"
@@ -126,11 +132,15 @@ class Lang_zh_HK: LangProtocol {
     var Confirm_Font_Delete__Msg: String = "是否刪除該字體 ?"
     var Font_Name_Is_Nil__Msg: String = "字體名稱為空"
     var Font_FamilyName_Is_Nil__Msg: String = "字體族名稱為空"
-    var Font_Import_Instruction__Msg: String = "使用者字體安裝步驟:\n\n1. 準備字體檔(.ttf/.ttc/.otf) 將其導入到App文檔目錄中. (即存放書籍的任何目錄，可通過以下方式導入: iCloud/Airdrop/Wifi等等).\n2. 點擊該字體檔即可安裝.\n3. 安裝完畢後可刪除原字體檔."
+    var Font_Import_Instruction__Msg: String = "使用者字體安裝步驟:\n\n1. 準備字體檔(.ttf/.ttc/.otf) 將其導入到App文檔目錄中(即存放書籍的任何目錄).\n2. 點擊該字體檔即可安裝.\n3. 安裝完畢後可刪除原字體檔."
     
     //MARK: - Msg Basic
     var Loading__Hud:String = ""
     var Loading_Importing__Msg: String = "導入中..."
+    var Loading__Msg:String = "載入中..."
+    var First_Preprocessing__Msg:String = "首次預處理..."
+    var Searching__Msg: String = "搜索中..."
+    var Take_A_Rest__Msg: String = "休息一下吧...^_^"
     var Operation_Ok__Msg:String = "操作成功"
     var Operation_Failed__Msg:String = "操作失敗"
     var Operation_Cancel__Msg: String = "操作已取消"
@@ -141,15 +151,21 @@ class Lang_zh_HK: LangProtocol {
     var InitFailed_Retry__Msg: String = "初始化失敗，請重試"
     var Verification_Failed__Msg: String = "驗證失敗"
     var Need_Verification_Unlock__Msg: String = "需要驗證才能解鎖"
+    var Style_Follow_System_Mode: String = "跟隨系統樣式"
+    var Style_Day_Mode: String = "淺色樣式"
+    var Style_Night_Mode: String = "深色樣式"
+    var More_Result__Msg: String = "更多結果..."
+    var No_More_Result__Msg: String = "沒有更多結果了"
+    var Busy_Searching_Wait__Msg: String = "搜索正忙，請稍候..."
     
     var Input_Is_Nil__Msg:String = "輸入為空"
     var Keyword_Is_Nil__Msg: String = "關鍵字為空"
+    var Input_Name__Msg: String = "請輸入名稱"
     var Input_Invalid_Char__Msg: String = "輸入非法字元"
     var Input_File_Name__Msg: String = "請輸入檔案名稱"
     var Input_Folder_Name__Msg:String = "請輸入資料夾名稱"
     var Content_Too_Long__Msg: String = "內容過長"
     var Folder_Already_Exist__Msg: String = "目錄已存在"
-    var Mail_With_Attach__Msg: String = "將無法閱讀的書籍以郵件附件的形式發送，以便我們進行診斷"
     
     //MARK: Msg-Finder
     var Invalid_Filename__Msg:String = "無效的檔案名"
@@ -168,6 +184,7 @@ class Lang_zh_HK: LangProtocol {
     var X_Item_Will_Be_Deleted__Msg:String = " 個專案將被刪除"
     var Will_Be_Deleted__Msg: String = " 將被刪除"
     var Confirm_Delete__Msg: String = "是否刪除？"
+    var Confirm_Delete__Msg_Fmt1: String = "是否刪除: “%@”?"
     
     //阅读
     var File_Open_Error__Msg:String = "檔案打開失敗"
@@ -222,9 +239,6 @@ class Lang_zh_HK: LangProtocol {
     var Too_Many_Clip_In_Page__Msg: String = "當前頁面有太多的底線，請優化"
     
     ///Txt Reader:
-    var Loading__Msg:String = "載入中..."
-    var First_Preprocessing__Msg:String = "首次預處理..."
-    
     var Reader_Turning_Effect__Title: String = "翻頁"
     var Reader_Turning_Effect_None: String = "無"
     var Reader_Turning_Effect_Curl: String = "模擬"
@@ -237,6 +251,10 @@ class Lang_zh_HK: LangProtocol {
     var PullRefresh_Pull_To_Load: String = "下拉載入上一章"
     var PullRefresh_Loading: String = "載入中..."
     var PullRefresh_Success: String = ""
+    
+    //MARK: - Other
+    var Other_LauchScreen_Quote: String = "一本好書就是一個好朋友"
+    var Other_Translate_Help: String = "感謝您幫助我們糾正翻譯問題"
     
     //MARK: Free Vesion Limit
     var Free_Limit__Function: String = "當前免費版本，無法進行此操作"

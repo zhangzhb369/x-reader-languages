@@ -31,6 +31,11 @@ class Lang_en_US: LangProtocol {
     var User__Title: String = "User"
     var Feedback__Title: String = "Feedback"
     var RecommendFeedback__Title: String = "Feedback"
+    var Rectify__Title: String = "Rectify"
+    var Website__Title: String = "Website"
+    var Booksite__Title: String = "Online Website"
+    var Booksite_Create__Title: String = "Create Website"
+    var Booksite_Edit__Title: String = "Edit Website"
     var Clean_Space__Title: String = "Free space"
     var Clear_Cache__Title: String = "Clear cache"
     var Clear_All__Title: String = "Clear all"
@@ -40,6 +45,7 @@ class Lang_en_US: LangProtocol {
     var Share_App__Title: String = "Share App"
     var Search_Local__Title: String = "Search Local"
     var Search_Internet__Title: String = "Search Internet"
+    var Translation_Issue__Title: String = "Translation Issue"
     
     //MARK: - Menu
     var Catalog__Title: String = "Catalog"
@@ -54,11 +60,10 @@ class Lang_en_US: LangProtocol {
     var Advanced_Search__Title: String = "Advanced search"
     var Move_To_Here__Title: String = "Move to here"
     var Import_File__Title: String = "Import file"
-    var Import_By_Wifi__Title: String = "Import by wifi"
-    var Import_By_iCloud__Title: String = "Import by iCloud"
     var Font_Management__Title: String = "Font Management"
     var ToggleList__Title: String = "Toggle List"
     var ToggleShowExtension__Title: String = "Toggle show extension"
+    var ToggleFolderAhead__Title: String = "Toogle folder ahead"
     var ZoomIn__Title: String = "Zoom In"
     var ZoomOut__Title: String = "Zoom Out"
     var ZoomNormal__Title: String = "Zoom Normal"
@@ -66,6 +71,7 @@ class Lang_en_US: LangProtocol {
     var Input_Keyword_To_Filter__Msg: String = "Input keyword to filter"
     var Input_Keyword_To_Search__Msg: String = "Input keyword to search"
     var Input_File_Extension_To_Search__Msg: String = "Separated by space, e.g., epub pdf"
+    var Input_Booksite_Url_Prompt__Msg: String = "Input url, start with http:// or https://"
     
     //MARK: - Finder Tool
     var Select_All__Title: String = "Select All"
@@ -84,10 +90,10 @@ class Lang_en_US: LangProtocol {
     var File_Transfer__Title: String = "File Transfer"
     var File_Import__Title: String = "File Import"
     var Import_Address__Title: String = "Location"
-    var Import_By_ICloud: String = "Import from iCloud"
-    var Import_By_WifiServer: String = "Import from wifi server"
-    var Import_By_Camera: String = "Import from camera"
-    var Import_By_PhotoAlbum: String = "Import from phtoto album"
+    var Import_From_ICloud: String = "Import from iCloud"
+    var Import_From_File: String = "Import from File"
+    var Import_From_WifiServer: String = "Import from wifi server"
+    var Import_From_PhotoAlbum: String = "Import from phtoto album"
     
     //MARK: - Finder-Sort
     var Sort_Title: String = "Sort"
@@ -124,27 +130,38 @@ class Lang_en_US: LangProtocol {
     var Font_Import_Error__Already_Registered: String = "Font already imported"
     var Confirm_Font_Import__Msg: String = "Confirm import the font ?"
     var Confirm_Font_Delete__Msg: String = "Confirm delete font ?"
-    var Font_Name_Is_Nil__Msg: String = "Font name is nil"
-    var Font_FamilyName_Is_Nil__Msg: String = "Font family name is nil"
-    var Font_Import_Instruction__Msg: String = "User font installing:\n\n1. Prepare the font file(.ttf/.ttc/.otf) and import into any folder of Document. (The place where you store the books. Import through: iCloud/Airdrop/Wifi etc).\n2. Click the font file to install.\n3. You can remove the font file after it installed."
+    var Font_Name_Is_Nil__Msg: String = "Font name is empty"
+    var Font_FamilyName_Is_Nil__Msg: String = "Font family name is empty"
+    var Font_Import_Instruction__Msg: String = "User font installing:\n\n1. Prepare the font file(.ttf/.ttc/.otf) and import into any folder of Document(The place where you store the books).\n2. Click the font file to install.\n3. You can remove the font file after it installed."
     
     //MARK: - Msg-Basic
     var Loading__Hud: String = ""
     var Loading_Importing__Msg: String = "Importing..."
-    var Operation_Ok__Msg: String = "Operation ok"
+    var Loading__Msg: String = "Loading..."
+    var First_Preprocessing__Msg: String = "First processing..."
+    var Searching__Msg: String = "Searching..."
+    var Take_A_Rest__Msg: String = "Take a rest...^_^"
+    var Operation_Ok__Msg: String = "Operation success"
     var Operation_Failed__Msg: String = "Operation failed"
     var Operation_Cancel__Msg: String = "Operation cancelled"
     var No_Results__Msg: String = "No results"
     var Target_Not_Found__Msg: String = "Target not found"
     var Setting_Has_Updated__Msg: String = "The setting has been updated"
     var Retry_Later__Msg: String = "Please retry later"
-    var InitFailed_Retry__Msg: String = "Init failed, please retry again"
+    var InitFailed_Retry__Msg: String = "Initialize failed, please retry again"
     var Verification_Failed__Msg: String = "Verification failed"
     var Need_Verification_Unlock__Msg: String = "Unlock with verification"
     var Input_Decompress_Passwd__Msg: String = "Please input unzip password"
+    var Style_Follow_System_Mode: String = "Follow system style"
+    var Style_Day_Mode: String = "Day style"
+    var Style_Night_Mode: String = "Night style"
+    var More_Result__Msg: String = "More result ..."
+    var No_More_Result__Msg: String = "No more result"
+    var Busy_Searching_Wait__Msg: String = "Busy searching, please wait..."
     
-    var Input_Is_Nil__Msg: String = "Input is null"
-    var Keyword_Is_Nil__Msg: String = "Keyword is null"
+    var Input_Is_Nil__Msg: String = "Input is empty"
+    var Keyword_Is_Nil__Msg: String = "Keyword is empty"
+    var Input_Name__Msg: String = "Please input name"
     var Input_Invalid_Char__Msg: String = "Input character invalid"
     var Input_File_Name__Msg: String = "Please input file name"
     var Input_Folder_Name__Msg: String = "Please input folder name"
@@ -154,20 +171,20 @@ class Lang_en_US: LangProtocol {
     //MARK: - Msg-Finder
     var Invalid_Filename__Msg: String = "Invalid filename"
     var File_List_Empty__Msg: String = "File list empty"
-    var File_Saved__Msg: String = "File save ok"
+    var File_Saved__Msg: String = "File save success"
     var File_Saved_Failed__Msg: String = "File save error"
     var File_Alreay_Exists__Msg: String = "File already exists"
-    var Mail_With_Attach__Msg: String = "To help us better diagnose, please attach the book which has problem"
     var Show_File_Extensions__Msg: String = "Show file extensions"
     var Hide_File_Extensions__Msg: String = "Hide file extensions"
     
     var No_Item_Selected__Msg: String = "No item has been selected"
-    var GT1_Item_Selected__Msg: String = "More than 1 selected items"
-    var Dest_Filename_Is_Nil__Msg: String = "Destination file name is null"
+    var GT1_Item_Selected__Msg: String = "More than 1 item selected"
+    var Dest_Filename_Is_Nil__Msg: String = "Destination file name is empty"
     var Dest_Dir_Not_Exists__Msg: String = "Destination folder not exist"
     var X_Item_Will_Be_Deleted__Msg: String = " items will be deleted"
     var Will_Be_Deleted__Msg: String = " will be deleted"
-    var Confirm_Delete__Msg: String = "Want to delete?"
+    var Confirm_Delete__Msg: String = "Confirm delete?"
+    var Confirm_Delete__Msg_Fmt1: String = "Confirm delete: “%@”?"
     
     var File_Open_Error__Msg: String = "File open failed"
     var Move_File_Error__Msg: String = "Move file error"
@@ -192,12 +209,12 @@ class Lang_en_US: LangProtocol {
     var Wifi_Transfer_Warn__Msg: String = "Warning: Do not leave or lock screen when transfering!"
     
     //MARK: Msg-Reader
-    var Catalog_Seq_Nil__Msg: String = "Catalog target is null"
+    var Catalog_Seq_Nil__Msg: String = "Catalog target is empty"
     var Selection_Exceed_2Pages__Msg: String = "Selection should not exceed 2 pages"
     
     //阅读
     var Chapter_Load_Error__Msg: String = "Chapter load failed"
-    var Paging_Load_Error__Msg: String = "Paging load failed"
+    var Paging_Load_Error__Msg: String = "Pagination load failed"
     var ChapterInfo_Load_Error__Msg: String = "Chapter info load failed"
     var ChapterInfo_Load_Error__Confirm: String = "Chapter info load failed, whether to close and reopen books?"
     var No_Chapter_Found__Msg: String = "No chapter found"
@@ -205,7 +222,7 @@ class Lang_en_US: LangProtocol {
     var No_Next_Chapter__Msg: String = "No next chapter"
     var No_Prev_Page__Msg: String = "No previous page"
     var No_Next_Page__Msg: String = "No next page"
-    var Prev_Chapter__Title: String = "Prev"
+    var Prev_Chapter__Title: String = "Previous"
     var Next_Chapter__Title: String = "Next"
     
     //MARK: - Remark
@@ -224,9 +241,6 @@ class Lang_en_US: LangProtocol {
     var Too_Many_Clip_In_Page__Msg: String = "Too many underline in the page, please optimize it"
 
     ///Txt Reader:
-    var Loading__Msg: String = "Loading..."
-    var First_Preprocessing__Msg: String = "First processing..."
-    
     var Reader_Turning_Effect__Title: String = "Page Turning"
     var Reader_Turning_Effect_None: String = "None"
     var Reader_Turning_Effect_Curl: String = "Curl"
@@ -239,6 +253,10 @@ class Lang_en_US: LangProtocol {
     var PullRefresh_Pull_To_Load: String = "Pull to load previous chapter"
     var PullRefresh_Loading: String = "Loading..."
     var PullRefresh_Success: String = ""
+    
+    //MARK: - Other
+    var Other_LauchScreen_Quote: String = "A good book is a good friend"
+    var Other_Translate_Help: String = "Thanks for helping us correct the translation problems"
     
     //MARK: Free Vesion Limit
     var Free_Limit__Function: String = "Can't do this in this free edition"

@@ -1,5 +1,7 @@
 # x-reader-languages
 Txt,Pdf,Epub,Mobi,Azw book reader for iOS/iPad/Mac OS. 苹果多平台文档阅读器.多语言翻译工程. 
+There may be some problems in the translation. So we need your help with the language translation. 
+Thanks.
 [x-reader.com](http://www.x-reader.com/)
 
 Here is the multi-language translation project for X-Reader.
@@ -9,7 +11,7 @@ Here is the multi-language translation project for X-Reader.
 
 ## :closed_book: X-Reader Features:
 - Good reading experience, custom fonts, themes, brightness, dark mode.
-- Support txt, epub, pdf, azw, azw3 etc.
+- Support txt, epub, pdf, mobi, azw, azw3 etc.
 - Import & export local books.
 - 4 turning animations: curl, horizontal, smooth scroll, none.
 - iPad multi tasking.
@@ -49,7 +51,7 @@ class Lang_zh_CN: LangProtocol {
 }
 ```
 
-#### Contace me: <zhangzhb369@gmail.com>
+#### Any problem please contace me: <zhangzhb369@gmail.com>
 #### Many thanks for your help.
 ####
 ####
