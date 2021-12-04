@@ -17,8 +17,10 @@ class Lang_en_US: LangProtocol {
     var Confirm_Title: String = "Confirm"
     var Ok_Title: String = "Ok"
     var Cancel_Title: String = "Cancel"
+    var GoBack_Title: String = "Back"
     var Close_Title: String = "Close"
     var Save_Title: String = "Save"
+    var Color__Title: String = "Color"
     var Keyword_Title: String = "Keyword"
     var empty_dir__Title: String = "empty"
     var Retry_Title: String = "Click to retry"
@@ -26,6 +28,7 @@ class Lang_en_US: LangProtocol {
     var Preface__Title: String = "Preface"
     var Content__Title: String = "Content"
     var Keep__Title: String = "Keep"
+    var Default__Title: String = "Default"
     var Use__Title: String = "Use"
     var System__Title: String = "System"
     var User__Title: String = "User"
@@ -54,6 +57,7 @@ class Lang_en_US: LangProtocol {
     var Search__Title: String = "Search"
     var Underline__Title: String = "Underline"
     var Note__Title: String = "Note"
+    var Filter__Title: String = "Filter"
     var Brightness__Title: String = "Brightness"
     var Edit__Title: String = "Edit"
     var New_Folder__Title: String = "New folder"
@@ -62,7 +66,7 @@ class Lang_en_US: LangProtocol {
     var Import_File__Title: String = "Import file"
     var Font_Management__Title: String = "Font Management"
     var ToggleList__Title: String = "Toggle List"
-    var ToggleShowExtension__Title: String = "Toggle show extension"
+    var ToggleShowExtension__Title: String = "Toggle extension"
     var ToggleFolderAhead__Title: String = "Toogle folder ahead"
     var ZoomIn__Title: String = "Zoom In"
     var ZoomOut__Title: String = "Zoom Out"
@@ -133,6 +137,7 @@ class Lang_en_US: LangProtocol {
     var Font_Name_Is_Nil__Msg: String = "Font name is empty"
     var Font_FamilyName_Is_Nil__Msg: String = "Font family name is empty"
     var Font_Import_Instruction__Msg: String = "User font installing:\n\n1. Prepare the font file(.ttf/.ttc/.otf) and import into any folder of Document(The place where you store the books).\n2. Click the font file to install.\n3. You can remove the font file after it installed."
+    var Font_System_Instruction__Msg: String = "You can also install font on your device (i.e., Settings-General-Fonts) and load it from the “System“ tab here."
     
     //MARK: - Msg-Basic
     var Loading__Hud: String = ""
@@ -141,11 +146,13 @@ class Lang_en_US: LangProtocol {
     var First_Preprocessing__Msg: String = "First processing..."
     var Searching__Msg: String = "Searching..."
     var Take_A_Rest__Msg: String = "Take a rest...^_^"
-    var Operation_Ok__Msg: String = "Operation success"
+    var Copy_Ok__Msg: String = "Copy successful"
+    var Operation_Ok__Msg: String = "Operation successful"
     var Operation_Failed__Msg: String = "Operation failed"
     var Operation_Cancel__Msg: String = "Operation cancelled"
     var No_Results__Msg: String = "No results"
     var Target_Not_Found__Msg: String = "Target not found"
+    var Currently_Not_Support__Msg: String = "Currently not support"
     var Setting_Has_Updated__Msg: String = "The setting has been updated"
     var Retry_Later__Msg: String = "Please retry later"
     var InitFailed_Retry__Msg: String = "Initialize failed, please retry again"
@@ -174,8 +181,8 @@ class Lang_en_US: LangProtocol {
     var File_Saved__Msg: String = "File save success"
     var File_Saved_Failed__Msg: String = "File save error"
     var File_Alreay_Exists__Msg: String = "File already exists"
-    var Show_File_Extensions__Msg: String = "Show file extensions"
-    var Hide_File_Extensions__Msg: String = "Hide file extensions"
+    var Show_File_Extensions__Msg: String = "Show extensions"
+    var Hide_File_Extensions__Msg: String = "Hide extensions"
     
     var No_Item_Selected__Msg: String = "No item has been selected"
     var GT1_Item_Selected__Msg: String = "More than 1 item selected"
@@ -198,6 +205,7 @@ class Lang_en_US: LangProtocol {
     var Confirm_Change_Extension__Msg_Fmt2: String = "Confirm changing file extension from “%@” to “%@” ?"
     var N_Files_Move_Ok__Msg_Fmt1: String = "%d files moved"
     var N_Files_Copy_Ok__Msg_Fmt1: String = "%d files copied"
+    var Close_Opening_File__Msg_Fmt1: String = "please close the file: %@"
     
     var Zip__Title: String = "Zip"
     var Extract__Title: String = "Extract"
@@ -208,11 +216,13 @@ class Lang_en_US: LangProtocol {
     var Wifi_Transfer_Info__Msg: String = "Make sure the computer and device in the same LAN\n    Please open browser and input the URL:"
     var Wifi_Transfer_Warn__Msg: String = "Warning: Do not leave or lock screen when transfering!"
     
-    //MARK: Msg-Reader
+    //Msg-Reading
+    var Screen_TurnOn_Reading__Title: String = "Screen lights up (when reading)"
+    var No_History_Records__Msg: String = "No history records"
     var Catalog_Seq_Nil__Msg: String = "Catalog target is empty"
+    var Selection_Is_Nil__Msg: String = "Selection is empty"
+    var Selection_Exceed_1Page__Msg: String = "Selection should not exceed 1 page"
     var Selection_Exceed_2Pages__Msg: String = "Selection should not exceed 2 pages"
-    
-    //阅读
     var Chapter_Load_Error__Msg: String = "Chapter load failed"
     var Paging_Load_Error__Msg: String = "Pagination load failed"
     var ChapterInfo_Load_Error__Msg: String = "Chapter info load failed"
@@ -225,20 +235,24 @@ class Lang_en_US: LangProtocol {
     var Prev_Chapter__Title: String = "Previous"
     var Next_Chapter__Title: String = "Next"
     
-    //MARK: - Remark
+    //MARK: - Note
     var Edit_Remark__Title: String = "Edit Note"
     //UnderlineMenu
-    var Show_Note__UnderlineMenu: String = "Show Note"
-    var Edit_Remark__UnderlineMenu: String = "Edit Note"
     var Add_Remark__UnderlineMenu: String = "Add Note"
     var View_Remark__UnderlineMenu: String = "View"
     var Delete_Remark__UnderlineMenu: String = "Delete"
-    var Copy__SelectionMenu: String = "Copy"
-    var Underline__SelectionMenu: String = "Underline"
-    var Note__SelectionMenu: String = "Note"
-    var Dictionary__SelectionMenu: String = "Dictionary"
-    var Search__SelectionMenu: String = "Search"
+    var Copy__PopupMenu: String = "Copy"
+    var Underline__PopupMenu: String = "Underline"
+    var Note__PopupMenu: String = "Note"
+    var Dictionary__PopupMenu: String = "Dictionary"
+    var Search__PopupMenu: String = "Search"
+    var Highlight__PopupMenu: String = "Highlight"
+    var Dashed__PopupMenu: String = "Dashed"
+    var Solid__PopupMenu: String = "Solid"
+    var Show_Note__PopupMenu: String = "Show Note"
+    var Edit_Note__Title: String = "Edit Note"
     var Too_Many_Clip_In_Page__Msg: String = "Too many underline in the page, please optimize it"
+    var Annotation_3rd_Party__Msg: String = "Third-party annotation"
 
     ///Txt Reader:
     var Reader_Turning_Effect__Title: String = "Page Turning"
@@ -247,6 +261,7 @@ class Lang_en_US: LangProtocol {
     var Reader_Turning_Effect_Slide: String = "Slide"
     var Reader_Turning_Effect_UpDown: String = "Vertical"
     var Reader_Turning_Effect_TwoUp: String = "Two Pages"
+    var Reader_Layout_Line_Height: String = "Line Height"
     
     //MARK: Refresh Control
     var PullRefresh_Release_To_Refresh: String = ""

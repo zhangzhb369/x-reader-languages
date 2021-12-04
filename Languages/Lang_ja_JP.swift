@@ -1,5 +1,5 @@
 //
-//  Lang_jp_JA.swift
+//  Lang_ja_JP.swift
 //  XReader
 //
 //  Created by ZZB on 2021/8/14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Lang_jp_JA: LangProtocol {
+class Lang_ja_JP: LangProtocol {
     var FontStyle_Title: String = "フォントスタイル"
     var Alert_Title: String = "警告"
     var Notice_Title: String = "情報"
@@ -17,8 +17,10 @@ class Lang_jp_JA: LangProtocol {
     var Confirm_Title: String = "確認する"
     var Ok_Title: String = "わかりました"
     var Cancel_Title: String = "キャンセル"
+    var GoBack_Title: String = "戻ります"
     var Close_Title: String = "閉める"
     var Save_Title: String = "セーブ"
+    var Color__Title: String = "色"
     var Keyword_Title: String = "キーワード"
     var empty_dir__Title: String = "空"
     var Retry_Title: String = "クリックして再試行"
@@ -26,6 +28,7 @@ class Lang_jp_JA: LangProtocol {
     var Preface__Title: String = "前書き"
     var Content__Title: String = "コンテンツ"
     var Keep__Title: String = "保つ"
+    var Default__Title: String = "デフォルト"
     var Use__Title: String = "使う"
     var System__Title: String = "制"
     var User__Title: String = "利用者"
@@ -54,6 +57,7 @@ class Lang_jp_JA: LangProtocol {
     var Search__Title: String = "捜索"
     var Underline__Title: String = "アンダーライン"
     var Note__Title: String = "手記"
+    var Filter__Title: String = "フィルター処理します"
     var Brightness__Title: String = "明るさ"
     var Edit__Title: String = "編集"
     var New_Folder__Title: String = "新しいフォルダ"
@@ -133,6 +137,7 @@ class Lang_jp_JA: LangProtocol {
     var Font_Name_Is_Nil__Msg: String = "フォント名が空です"
     var Font_FamilyName_Is_Nil__Msg: String = "フォント ファミリ名が空です"
     var Font_Import_Instruction__Msg: String = "ユーザー フォントのインストール:\n\n1. フォントファイル(.ttf/.ttc/.otf)を準備し、ドキュメントの任意のフォルダにインポートします(本を保管する場所)。\n2. インストールするフォントファイルをクリックします。\n3. フォントファイルはインストール後に削除できます。"
+    var Font_System_Instruction__Msg: String = "また、最初にデバイスにフォントをインストールし (設定 - 一般 - フォント)、ここで [システム] タブに読み込むこともできます。"
     
     //MARK: - Msg-Basic
     var Loading__Hud: String = ""
@@ -141,11 +146,13 @@ class Lang_jp_JA: LangProtocol {
     var First_Preprocessing__Msg: String = "最初の処理..."
     var Searching__Msg: String = "検索中..."
     var Take_A_Rest__Msg: String = "休息を取る...^_^"
+    var Copy_Ok__Msg: String = "コピーは成功しました"
     var Operation_Ok__Msg: String = "操作の成功"
     var Operation_Failed__Msg: String = "操作に失敗しました"
     var Operation_Cancel__Msg: String = "操作がキャンセルされました"
     var No_Results__Msg: String = "結果なし"
     var Target_Not_Found__Msg: String = "ターゲットが見つかりません"
+    var Currently_Not_Support__Msg: String = "現在サポートされていません"
     var Setting_Has_Updated__Msg: String = "設定が更新されました"
     var Retry_Later__Msg: String = "後で再試行してください"
     var InitFailed_Retry__Msg: String = "初期化に失敗しました"
@@ -174,8 +181,8 @@ class Lang_jp_JA: LangProtocol {
     var File_Saved__Msg: String = "ファイルの保存に成功しました"
     var File_Saved_Failed__Msg: String = "ファイル保存エラー"
     var File_Alreay_Exists__Msg: String = "ファイルは既に存在します"
-    var Show_File_Extensions__Msg: String = "ファイル拡張子を表示する"
-    var Hide_File_Extensions__Msg: String = "ファイル拡張子を隠す"
+    var Show_File_Extensions__Msg: String = "拡張子を表示する"
+    var Hide_File_Extensions__Msg: String = "拡張子を隠す"
     
     var No_Item_Selected__Msg: String = "アイテムが選択されていません"
     var GT1_Item_Selected__Msg: String = "1 つ以上の項目が選択されました"
@@ -198,6 +205,7 @@ class Lang_jp_JA: LangProtocol {
     var Confirm_Change_Extension__Msg_Fmt2: String = "ファイル拡張子を 「%@」 から 「%@」 に変更したことを確認する?"
     var N_Files_Move_Ok__Msg_Fmt1: String = "%d 個のファイルが移動されました"
     var N_Files_Copy_Ok__Msg_Fmt1: String = "%d 個のファイルがコピーされました"
+    var Close_Opening_File__Msg_Fmt1: String = "ファイルを閉じてください: %@"
     
     var Zip__Title: String = "圧縮します"
     var Extract__Title: String = "解凍します"
@@ -208,11 +216,13 @@ class Lang_jp_JA: LangProtocol {
     var Wifi_Transfer_Info__Msg: String = "同じ LAN のコンピュータとデバイスがブラウザを開いて URL を入力してください:"
     var Wifi_Transfer_Warn__Msg: String = "告:転送時に画面を離れたりロックしたりしないでください!"
     
-    //MARK: Msg-Reader
+    //Reading
+    var Screen_TurnOn_Reading__Title: String = "画面が点灯する(読み取り時)"
+    var No_History_Records__Msg: String = "履歴はありません"
     var Catalog_Seq_Nil__Msg: String = "カタログ ターゲットが空です"
+    var Selection_Is_Nil__Msg: String = "選択が空です"
+    var Selection_Exceed_1Page__Msg: String = "選択したページは 1 ページを超えないようにしてください"
     var Selection_Exceed_2Pages__Msg: String = "選択したページは 2 ページを超えないようにしてください"
-    
-    //阅读
     var Chapter_Load_Error__Msg: String = "チャプターの読み込みに失敗しました"
     var Paging_Load_Error__Msg: String = "ページ付けの読み込みに失敗しました"
     var ChapterInfo_Load_Error__Msg: String = "チャプター情報の読み込みに失敗しました"
@@ -225,28 +235,33 @@ class Lang_jp_JA: LangProtocol {
     var Prev_Chapter__Title: String = "先の"
     var Next_Chapter__Title: String = "次に"
     
-    //MARK: - Remark
+    //MARK: - Note
     var Edit_Remark__Title: String = "ノートの編集"
     //UnderlineMenu
-    var Show_Note__UnderlineMenu: String = "メモを表示"
-    var Edit_Remark__UnderlineMenu: String = "ノートの編集"
     var Add_Remark__UnderlineMenu: String = "メモを追加"
     var View_Remark__UnderlineMenu: String = "眺める"
     var Delete_Remark__UnderlineMenu: String = "削除"
-    var Copy__SelectionMenu: String = "写し"
-    var Underline__SelectionMenu: String = "アンダーライン"
-    var Note__SelectionMenu: String = "手記"
-    var Dictionary__SelectionMenu: String = "辞書"
-    var Search__SelectionMenu: String = "捜索"
+    var Copy__PopupMenu: String = "写し"
+    var Underline__PopupMenu: String = "アンダーライン"
+    var Note__PopupMenu: String = "手記"
+    var Dictionary__PopupMenu: String = "辞書"
+    var Search__PopupMenu: String = "捜索"
+    var Highlight__PopupMenu: String = "ハイライト"
+    var Dashed__PopupMenu: String = "点線"
+    var Solid__PopupMenu: String = "実線"
+    var Show_Note__PopupMenu: String = "ノートを表示します"
+    var Edit_Note__Title: String = "ノートを編集します"
     var Too_Many_Clip_In_Page__Msg: String = "ページに下線が多すぎます"
+    var Annotation_3rd_Party__Msg: String = "サード パーティの注釈"
 
-    ///Txt Reader:
+    //MARK: Txt Reader:
     var Reader_Turning_Effect__Title: String = "ページめくり"
     var Reader_Turning_Effect_None: String = "なし"
     var Reader_Turning_Effect_Curl: String = "カール"
     var Reader_Turning_Effect_Slide: String = "滑る"
     var Reader_Turning_Effect_UpDown: String = "垂直"
     var Reader_Turning_Effect_TwoUp: String = "2ページ"
+    var Reader_Layout_Line_Height: String = "行の高さ"
     
     //MARK: Refresh Control
     var PullRefresh_Release_To_Refresh: String = ""

@@ -1,8 +1,13 @@
 # x-reader-languages
-Txt,Pdf,Epub,Mobi,Azw book reader for iOS/iPad/Mac OS. 苹果多平台文档阅读器.多语言翻译工程. 
-There may be some problems in the translation. So we need your help with the language translation. 
+Txt,Pdf,Epub,Mobi,Azw book reader for iOS/iPad/Mac OS. 苹果多平台文档阅读器.多语言翻译工程.   
+There may be some problems in the translation. So we need your help with the language translation.   
 Thanks.
-[x-reader.com](http://www.x-reader.com/)
+
+[www.x-reader.com](http://www.x-reader.com/)  
+
+[macOS download](https://apps.apple.com/cn/app/id1476139856)  
+
+[iOS download](https://itunes.apple.com/cn/app/id1476139856)  
 
 Here is the multi-language translation project for X-Reader.
 
@@ -17,7 +22,7 @@ Here is the multi-language translation project for X-Reader.
 - iPad multi tasking.
 - Mac multi windows.
 - Keyboard shortcuts.
-- Multi languages support.
+- Draw underlines and take notes.
    
 
 ## :green_book: Multi-languange localization:

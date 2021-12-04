@@ -18,8 +18,10 @@ class Lang_zh_CN: LangProtocol {
     var Confirm_Title: String = "确认"
     var Ok_Title: String = "确定"
     var Cancel_Title: String = "取消"
+    var GoBack_Title: String = "返回"
     var Close_Title: String = "关闭"
     var Save_Title: String = "保存"
+    var Color__Title: String = "颜色"
     var Keyword_Title: String = "关键字"
     var empty_dir__Title: String = "空目录"
     var Retry_Title: String = "点击重试"
@@ -27,6 +29,7 @@ class Lang_zh_CN: LangProtocol {
     var Preface__Title: String = "前言"
     var Content__Title: String = "正文"
     var Keep__Title: String = "保留"
+    var Default__Title: String = "默认"
     var Use__Title: String = "使用"
     var System__Title: String = "系统"
     var User__Title: String = "用户"
@@ -60,6 +63,7 @@ class Lang_zh_CN: LangProtocol {
     var Advanced_Search__Title: String = "高级搜索"
     var Move_To_Here__Title: String = "移动到此"
     var Import_File__Title: String = "导入文档"
+    var Filter__Title: String = "筛选"
     var Brightness__Title: String = "亮度"
     var ToggleList__Title: String = "切换列表"
     var ToggleShowExtension__Title: String = "切换扩展名"
@@ -135,6 +139,7 @@ class Lang_zh_CN: LangProtocol {
     var Font_Name_Is_Nil__Msg: String = "字体名称为空"
     var Font_FamilyName_Is_Nil__Msg: String = "字体族名称为空"
     var Font_Import_Instruction__Msg: String = "用户字体安装步骤:\n\n1. 准备字体文件(.ttf/.ttc/.otf) 将其导入到App文档目录中(即存放书籍的任何目录).\n2. 点击该字体文件即可安装.\n3. 安装完毕后可删除原字体文件."
+    var Font_System_Instruction__Msg: String = "您也可以先将字体安装到设备中（即：设置-通用-字体），然后在这里的“系统”选项卡中进行加载。"
     
     //MARK: - Msg Basic
     var Loading__Hud: String = ""
@@ -143,11 +148,13 @@ class Lang_zh_CN: LangProtocol {
     var First_Preprocessing__Msg: String = "首次预处理..."
     var Searching__Msg: String = "搜索中..."
     var Take_A_Rest__Msg: String = "休息一下吧...^_^"
+    var Copy_Ok__Msg: String = "复制成功"
     var Operation_Ok__Msg: String = "操作成功"
     var Operation_Failed__Msg: String = "操作失败"
     var Operation_Cancel__Msg: String = "操作已取消"
     var No_Results__Msg: String = "无结果"
     var Target_Not_Found__Msg: String = "找不到目标"
+    var Currently_Not_Support__Msg: String = "暂不支持"
     var Setting_Has_Updated__Msg: String = "设置已生效"
     var Retry_Later__Msg: String = "请稍后重试"
     var InitFailed_Retry__Msg: String = "初始化失败，请重试"
@@ -176,8 +183,8 @@ class Lang_zh_CN: LangProtocol {
     var File_Saved_Failed__Msg: String = "文件保存失败"
     var File_Alreay_Exists__Msg: String = "文件已存在"
     var Input_Decompress_Passwd__Msg: String = "请输入解压密码"
-    var Show_File_Extensions__Msg: String = "显示文件扩展名"
-    var Hide_File_Extensions__Msg: String = "隐藏文件扩展名"
+    var Show_File_Extensions__Msg: String = "显示扩展名"
+    var Hide_File_Extensions__Msg: String = "隐藏扩展名"
     
     var No_Item_Selected__Msg: String = "尚未选中任何项目"
     var GT1_Item_Selected__Msg: String = "选中项目超过1个"
@@ -200,6 +207,7 @@ class Lang_zh_CN: LangProtocol {
     var Confirm_Change_Extension__Msg_Fmt2: String = "确定要将文件扩展名从“%@”更改为“%@”吗？"
     var N_Files_Move_Ok__Msg_Fmt1: String = "%d个文件移动成功"
     var N_Files_Copy_Ok__Msg_Fmt1: String = "%d个文件拷贝成功"
+    var Close_Opening_File__Msg_Fmt1: String = "请先关闭文件: %@"
     
     var Zip__Title: String = "压缩"
     var Extract__Title: String = "解压"
@@ -210,10 +218,14 @@ class Lang_zh_CN: LangProtocol {
     var Wifi_Transfer_Info__Msg: String = "请确保电脑和手机在同一个局域网下\n 请打开电脑浏览器输入以下地址:"
     var Wifi_Transfer_Warn__Msg: String = "注意：传输过程中请勿离开此页面或锁屏！"
     
-    //MARK: Msg-Reading
+    //MARK: Reading
+    var Screen_TurnOn_Reading__Title: String = "屏幕常亮（阅读时）"
     var Prev_Chapter__Title: String = "上一章"
     var Next_Chapter__Title: String = "下一章"
+    var No_History_Records__Msg: String = "没有历史记录"
     var Catalog_Seq_Nil__Msg: String = "目录目标为空"
+    var Selection_Is_Nil__Msg: String = "选择为空"
+    var Selection_Exceed_1Page__Msg: String = "选中范围不应超过1页"
     var Selection_Exceed_2Pages__Msg: String = "选中范围不应超过2页"
     var Chapter_Load_Error__Msg: String = "章节载入错误"
     var Paging_Load_Error__Msg: String = "分页载入错误"
@@ -225,19 +237,23 @@ class Lang_zh_CN: LangProtocol {
     var No_Prev_Page__Msg: String = "没有上一页了"
     var No_Next_Page__Msg: String = "没有下一页了"
     
-    //MARK: - Remark
+    //MARK: - Note
     var Edit_Remark__Title: String = "编辑批注"
-    var Show_Note__UnderlineMenu: String = "查看批注"
-    var Edit_Remark__UnderlineMenu: String = "编辑批注"
     var Add_Remark__UnderlineMenu: String = "添加批注"
     var View_Remark__UnderlineMenu: String = "查看"
     var Delete_Remark__UnderlineMenu: String = "删除"
-    var Copy__SelectionMenu: String = "复制"
-    var Underline__SelectionMenu: String = "划线"
-    var Note__SelectionMenu: String = "批注"
-    var Dictionary__SelectionMenu: String = "词典"
-    var Search__SelectionMenu: String = "搜索"
+    var Copy__PopupMenu: String = "复制"
+    var Underline__PopupMenu: String = "划线"
+    var Note__PopupMenu: String = "筆記"
+    var Dictionary__PopupMenu: String = "词典"
+    var Search__PopupMenu: String = "搜索"
+    var Highlight__PopupMenu: String = "高亮"
+    var Dashed__PopupMenu: String = "虚线"
+    var Solid__PopupMenu: String = "实线"
+    var Show_Note__PopupMenu: String = "查看笔记"
+    var Edit_Note__Title: String = "编辑笔记"
     var Too_Many_Clip_In_Page__Msg: String = "当前页面有太多的下划线，请优化"
+    var Annotation_3rd_Party__Msg: String = "第三方注解"
     
     ///Txt Reader:
     var Reader_Turning_Effect__Title: String = "翻页"
@@ -246,6 +262,7 @@ class Lang_zh_CN: LangProtocol {
     var Reader_Turning_Effect_Slide: String = "平移"
     var Reader_Turning_Effect_UpDown: String = "上下"
     var Reader_Turning_Effect_TwoUp: String = "双页"
+    var Reader_Layout_Line_Height: String = "行高"
     
     //MARK: Refresh Control
     var PullRefresh_Release_To_Refresh: String = ""
